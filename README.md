@@ -1,8 +1,8 @@
 # AI Learning Series
 
-This repository documents my journey of learning AI Engineering through hands-on projects.
+A public repository documenting my journey of learning AI Engineering through hands-on projects.
 
-Instead of only studying concepts, I'm building small projects every day to understand how modern AI applications are developed. Every week's work is organized into separate folders with the corresponding source code and notes.
+The focus of this repository is to understand how modern AI systems are built by implementing concepts from scratch and building practical applications along the way.
 
 ---
 
@@ -10,57 +10,91 @@ Instead of only studying concepts, I'm building small projects every day to unde
 
 ### Week 1
 
-**Day 1**
+#### Day 1 — Getting Started with LLMs
 - Calling an LLM using the Groq API
 - Project setup with `uv`
-- Environment variables using `.env`
+- Managing API keys using `.env`
 
-**Day 2**
-- System prompts
+#### Day 2 — Controlling LLM Behaviour
+- System Role
 - Temperature
-- Controlling model behavior
+- Prompt behavior
 
-**Day 3**
+#### Day 3 — Tokens & Tokenization
 - Tokens
 - Tokenization
-- Context windows
+- Context Window
+- Token Limits
 
-**Day 4**
-- Structured outputs
+#### Day 4 — Structured Outputs
 - Pydantic
-- JSON mode
-- Data validation
-- Information extraction
+- JSON Mode
+- Data Validation
+- Structured LLM Outputs
+- Information Extraction
 
-**Day 5**
-- AI Resume Parser
-- Resume & Job Description matching
-- Structured extraction with Pydantic
-- Match score generation using Groq
+#### Day 5 — AI Resume Parser
+Built an AI-powered Resume Parser that:
+
+- Parses PDF and DOCX resumes
+- Extracts structured information using Pydantic
+- Matches resumes against Job Descriptions
+- Generates match scores and reasoning using Groq
 
 ---
 
 ### Week 2
 
-**Day 1**
-- Production Prompt Engineering
-- Prompt structure
+#### Day 1 — Production Prompt Engineering
+- Production-grade prompt design
 - Prompt templates
+- Constraints & output formatting
+- Markdown vs XML prompting
 - Reliable LLM outputs
 - Email classification
 - Article summarization
 - Sentiment analysis
 
+#### Day 2 — ReAct AI Agents
+Implemented a ReAct (Reasoning + Acting) AI Agent from scratch in Python.
+
+Topics covered:
+
+- ReAct architecture
+- Thought → Action → Observation loop
+- Tool calling
+- Multi-step reasoning
+- Building AI agents without frameworks
+- Calculator tool
+- Population lookup tool
+- Agent execution loop
+- Parsing actions and observations
+
 ---
 
 ## Tech Stack
 
+### Programming Language
 - Python
+
+### AI & LLM
 - Groq API
-- Llama 3.3
+- Llama 3.3 70B
+- Prompt Engineering
+- ReAct Pattern
+
+### Data Validation
 - Pydantic
-- python-dotenv
+
+### Environment & Package Management
 - uv
+- python-dotenv
+
+### File Processing
+- PDF Parsing
+- DOCX Parsing
+
+### Development Tools
 - Git
 - GitHub
 - VS Code
@@ -80,30 +114,25 @@ AI-LEARNING-SERIES
 │   └── day5
 │
 ├── week2
-│   └── day1
+│   ├── day1
+│   └── day2
 │
 └── README.md
 ```
 
 ---
 
-## Goals
-
-- Build a strong foundation in AI Engineering
-- Learn Prompt Engineering
-- Build production-ready AI applications
-- Understand how LLMs work in real-world systems
-- Explore RAG, AI Agents and MCP
-- Maintain a public record of my learning
-
----
-
-## Current Progress
+## Progress Tracker
 
 | Week | Topic | Status |
 |------|-------|--------|
-| Week 1 | LLM Basics, Prompting, Tokenization, Structured Outputs, Resume Parser | ✅ |
-| Week 2 | Production Prompt Engineering | 🚧 In Progress |
+| Week 1 | LLM Fundamentals | ✅ |
+| Week 1 | Prompting & Model Control | ✅ |
+| Week 1 | Tokens & Tokenization | ✅ |
+| Week 1 | Structured Outputs | ✅ |
+| Week 1 | AI Resume Parser | ✅ |
+| Week 2 | Production Prompt Engineering | ✅ |
+| Week 2 | ReAct AI Agent | ✅ |
 
 ---
 
@@ -113,18 +142,30 @@ AI-LEARNING-SERIES
 - Embeddings
 - Vector Databases
 - Retrieval-Augmented Generation (RAG)
+- Memory
+- Tool Calling
 - AI Agents
+- Multi-Agent Systems
 - LangChain
 - LangGraph
 - Model Context Protocol (MCP)
-- Memory
-- Tool Calling
+- AI Workflows
 - AI Deployment
 
 ---
 
-## About
+## Why this repository?
 
-This repository is updated regularly as I continue learning and building AI applications.
+I'm using this repository as a public learning journal while building practical AI projects. Every topic includes code, experiments, and implementations that help reinforce the underlying concepts.
 
-If you're learning AI Engineering as well, feel free to explore the projects or share suggestions.
+The goal is to build a strong foundation in AI Engineering by understanding how things work before relying on frameworks.
+
+---
+
+## Author
+
+**Piyush Pandey**
+
+GitHub: https://github.com/Coder-piyy
+
+If you find this repository useful, consider giving it a ⭐.
